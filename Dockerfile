@@ -11,7 +11,6 @@ RUN mkdir /opt && \
         ln -s /opt/apache-maven-${MAVEN_VERSION} /opt/apache-maven &&\
         mkdir -p /aws && \
         pip install awscli && \
-        npm install jsdoc && \
         rm /var/cache/apk/*
 
 ENV JAVA_HOME /usr/lib/jvm/default-jvm
